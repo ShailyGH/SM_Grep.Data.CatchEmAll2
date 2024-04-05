@@ -1,38 +1,68 @@
 # Part 1
-### a)
-
-
-
+### a) In the answers file, found in the greps directory, show the grep statement you used to catch each pokemon and save to a txt file, in the format [pokemon name].txt
+grep -p "bulb" filescan_00.1
+grep -p "beed" filescan_00.1
+grep -p "blas" filescan_00.1
+grep -p "butt" filescan_00.1
+grep -p "izard" filescan_00.2
+grep -p "mander" filescan_00.2
+grep -p "meleon" filescan_00.2
+grep -p "ivys" filescan_00.3
+grep -p "jigg" filescan_00.3
+grep -p "meow" filescan_00.3
+grep -p "pika" filescan_00.3
+grep -p "psyd" filescan_00.4
+grep -p "squi" filescan_00.4
+grep -p "venu" filescan_00.4
+grep -p "wart" filescan_00.4
 
 ### b)
-
-
+grep -p "bulb" filescan_00.1 > /Users/shaily/Projects/SM_Grep.Data.CatchEmAll2/captured/bulbasaur.txt
+grep -p "beed" filescan_00.1 > /Users/shaily/Projects/SM_Grep.Data.CatchEmAll2/captured/beedrill.txt
+grep -p "blas" filescan_00.1 > /Users/shaily/Projects/SM_Grep.Data.CatchEmAll2/captured/blastoise.txt
+grep -p "butt" filescan_00.1 > /Users/shaily/Projects/SM_Grep.Data.CatchEmAll2/captured/butterfree.txt
+grep -p "izard" filescan_00.2 > /Users/shaily/Projects/SM_Grep.Data.CatchEmAll2/captured/charizard.txt
+grep -p "mander" filescan_00.2 > /Users/shaily/Projects/SM_Grep.Data.CatchEmAll2/captured/charmander.txt
+grep -p "meleon" filescan_00.2 > /Users/shaily/Projects/SM_Grep.Data.CatchEmAll2/captured/charmeleon.txt
+grep -p "ivys" filescan_00.3 > /Users/shaily/Projects/SM_Grep.Data.CatchEmAll2/captured/ivysaur.txt
+grep -p "jigg" filescan_00.3 > /Users/shaily/Projects/SM_Grep.Data.CatchEmAll2/captured/jigglypuff.txt
+grep -p "meow" filescan_00.3 > /Users/shaily/Projects/SM_Grep.Data.CatchEmAll2/captured/meowth.txt
+grep -p "pika" filescan_00.3 > /Users/shaily/Projects/SM_Grep.Data.CatchEmAll2/captured/pikachu.txt
+grep -p "psyd" filescan_00.4 > /Users/shaily/Projects/SM_Grep.Data.CatchEmAll2/captured/psyduck.txt
+grep -p "squi" filescan_00.4 > /Users/shaily/Projects/SM_Grep.Data.CatchEmAll2/captured/squirtle.txt
+grep -p "venu" filescan_00.4 > /Users/shaily/Projects/SM_Grep.Data.CatchEmAll2/captured/venusaur.txt
+grep -p "wart" filescan_00.4 > /Users/shaily/Projects/SM_Grep.Data.CatchEmAll2/captured/wartortle.txt
 
 ### c)
+bulbasaur in file "filescan_00.1"
+beedrill in file "filescan_00.1"
+blastoise in file "filescan_00.1"
+butterfree in file "filescan_00.1"
 
+charizard in file "filescan_00.2"
+charmander in file "filescan_00.2"
+charmeleon in file "filescan_00.2"
 
+ivysaur in file "filescan_00.3"
+jigglypuff in file "filescan_00.3"
+meowth in file "filescan_00.3"
+pikachu in file "filescan_00.3"
 
-
-
-
-
-
-
-
-
-
+psyduck in file "filescan_00.4"
+squirtle in file "filescan_00.4"
+venusaur in file "filescan_00.4"
+wartortle in file "filescan_00.4"
 
 # Part 2
 ### a)
-
-
-
-
-
+There are 15 pokemons.
+ls -l . | egrep -c '^-'
 
 ### b)
+beedrill, charizard and pikachu are three biggest pokemon.
 
-
+I used below command to find number of lines in each txt files.
+wc -l ./captured/*
 
 
 
